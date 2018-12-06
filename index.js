@@ -43,7 +43,7 @@ var User = sequelize.define(
 //
 //------------------------------------------------------------------------------------------
 
-router.post('/register', async (ctx, next) => {
+router.post('/xiaomu/register', async (ctx, next) => {
   var username = ctx.request.body.username
   var password = ctx.request.body.password
 
@@ -78,7 +78,7 @@ router.post('/register', async (ctx, next) => {
 //
 //------------------------------------------------------------------------------------------
 
-router.post('/login', async (ctx, next) => {
+router.post('/xiaomu/login', async (ctx, next) => {
   var username = ctx.request.body.username
   var password = ctx.request.body.password
 
